@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        background-color: #121212; /* 网页背景黑色*/
+        font-family: 'Microsoft YaHei', sans-serif; /* 微软雅黑字体 */
+        text-align: center; /* 文字居中对齐 */
+        padding-top: 50px; /* 内容向下一点不贴顶 */
+    }
+    h1 {
+        color: #ff6b6b; /* 标题珊瑚红色 */
+        font-size: 40px; /* 大标题大 */
+    }
+    p {
+        color: #f7f7f7; /* 第二行文字深灰色 */
+        font-size: 18px; /* 第二行文字大一点 */
+    }
+</style>
+</head>
+<body>
+<body>
+
+    <!-- 🌟 导航栏：固定在网页右上方，Logo跟导航栏分两端 -->
+    <div style="
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        box-sizing: border-box;
+        display: flex; 
+        justify-content: space-between; /* 核心：让Logo在最左，链接在最右 */
+        align-items: center; /* 让左右两边的东西上下居中对齐 */
+        padding: 15px 40px; /* 导航栏的内边距，控制离边缘的距离 */
+        background-color: rgba(18, 18, 18, 0.95); /* 半透明黑背景，滚动时更酷炫 */
+        border-bottom: 1px solid #222222; /* 底部加一条隐约的分割线 */
+        z-index: 1000; /* 确保导航栏永远飘在最上面 */
+    ">
+        <!-- 1. 左上角的 Logo 区域 -->
+        <a href="#" style="display: flex; align-items: center; text-decoration: none;">
+            <img src="logo.png" alt="我的Logo" style="height: 80px; width: auto;">
+        </a>
+        
+        <!-- 2. 右上角的 导航菜单 区域 -->
+        <div>
+            <a href="https://google.com" target="_blank" style="color: #00ff66; margin-left: 25px; text-decoration: none; font-weight: bold;">主页</a>
+            <a href="https://t.me/ALYREN_OFFICIAL" target="_blank" style="color: #ffffff; margin-left: 25px; text-decoration: none;">关于我</a>
+            <a href="#" style="color: #ffffff; margin-left: 25px; text-decoration: none;">我的作品</a>
+        </div>
+    </div>
+
+    <!-- 下面是网页的主体内容，它们依然会帅气地居中显示 -->
+    <h1>我的酷炫个人网站</h1>
+
+    <p>欢迎来到我的秘密基地！我是一名正在学习网站开发的未来极客。</p>
+    <p style="color: #888888; font-size: 16px;">这里你可以随意修改，写你想写的任何东西。</p>
+
+    <!-- 按钮放在一个专门居中的容器里 -->
+    <div class="btn-container">
+        <button onclick="alert('恭喜你，触发了隐藏彩蛋！')" style="background-color: #00ff66; color: #121212; border: none; padding: 12px 30px; font-size: 16px; font-weight: bold; border-radius: 25px; cursor: pointer; box-shadow: 0 0 15px rgba(0,255,102,0.4);">
+            点击联系我
+        </button>
+    </div>
+
+</body>
+
+</html>
